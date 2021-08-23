@@ -32,7 +32,7 @@ const PostEditor =(props) => {
     <div className="panel panel-default post-editor">
       <div className="panel-body">
         <textarea className="form-control post-editor-input" value={inputValue} onChange={(ev) =>handlePostEditorInputChange(ev)}/>
-        <button className="btn btn-success post-editor-button" onClick={()=>{createPost();}}>Post</button>
+        <button className="btn btn-primary post-editor-button" onClick={()=>{createPost();}}>Post</button>
       </div>
     </div>
   )

@@ -4,6 +4,5 @@ const tailwindcss = require('tailwindcss');
          require("postcss-import"),
          tailwindcss('./tailwind.js'),
          require('autoprefixer'),
-         
      ],
  };

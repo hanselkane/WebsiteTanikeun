@@ -1,0 +1,111 @@
+:root {
+    --bg: #242526;
+    --bg-accent: #484a4d;
+    --text-color: #dadce1;
+    --nav-size: 60px;
+    --border: 1px solid #474a4d;
+    --border-radius: 8px;
+    --speed: 500ms;
+  }
+
+.txtdropdown{
+    transition: margin-top var(--speed) ease;
+}
+
+.dropdown{
+    position: absolute;
+    margin-top: 1em;
+    width: 100%;
+    transition: translateX(-45%);
+    background-color: #e2fff3;
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    overflow: hidden;
+    transition: height var(--speed) ease;
+}
+
+.btn-addtoko{
+    background: #19f1a9;
+    @apply px-10 py-2 m-4;
+    margin-top: 0.5em;
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 3px 3px 5px #d1d1d1;
+}
+.btn-addtoko:hover{
+    background: #17cf92;
+    color: #FFFFFF;
+    @apply px-10 py-2 m-4;
+    margin-top: 0.5em;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.btn-submit{
+    background:#3bccff;
+    color: white;
+    padding: 5px 45%;
+    margin-bottom:3em;
+}
+.btn-submit:hover{
+    color:black;
+}
+
+.input-form{
+    background: #e2fff3;
+}
+
+.input-form-enter {
+    transform: translateY(-110%);
+}
+
+.input-form-enter-active {
+    transform: translateX(0%);
+    transition: all var(--speed) ease;
+}
+
+.input-form-exit {
+}
+
+.input-form-exit-active {
+    transform: translateY(-110%);
+    transition: all var(--speed) ease;
+}
+
+.txtbottom-form-enter {
+}
+
+.txtbottom-form-enter-active {
+    transition: margin-top var(--speed) ease;
+}
+
+.txtbottom-form-exit {
+}
+
+.txtbottom-form-exit-active {
+    transition: margin-top var(--speed) ease;
+}
+
+.tokoformjudul{
+    float:left;
+    width: 40%;
+    height: 2em;
+    background: #fdfff4;
+    border: 2px;
+}
+
+.tokoformdeskripsi{
+    float:left;
+    width: 40%;
+    height: 6em;
+    background: #fdfff4;
+    border: 2px;
+}
+
+.tokoformheader{
+    margin-top: 3em;
+    margin-bottom:0.5em;
+    text-align:left;
+    font: 15px;
+    left: 10px;
+}

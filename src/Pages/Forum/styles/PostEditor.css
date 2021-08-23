@@ -2,19 +2,35 @@
     margin: 1em 20%;
   }
   
-  .post-editor-button{
-    float: right;
-    margin-top: 1em;
+.post-editor-button{
+  float: right;
+  margin-top: 1em;
+  color: white;
+}
+
+@media(max-width: 900px){
+  .post-editor{
+    margin: 1em 20%;
   }
-  
-  @media(max-width: 900px){
-    .post-editor{
-      margin: 1em 20%;
-    }
-    .post-body{
-      margin: 1em 20%;
-    }
+  .post-body{
+    margin: 1em 20%;
   }
+  .post-editor-input{
+    background:#edfcfc;
+  }
+}
+
+
+
+.btn{
+  @apply px-10 py-2 m-4; 
+}
+
+.btn.btn-primary{
+  background:#36ff65;
+  padding:3% 5%;
+  border-radius: 8px;
+}
   
   
   
