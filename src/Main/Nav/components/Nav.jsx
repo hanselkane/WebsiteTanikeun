@@ -12,7 +12,7 @@ function Nav() {
   return (
     <nav class>
         <h3>
-            Logo
+            TANIKEUN
         </h3>
         <u1 className= "nav-links">
             <Link style={style} to ="/">

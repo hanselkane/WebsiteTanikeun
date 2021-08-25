@@ -17,7 +17,6 @@
     margin-top: 1em;
     width: 100%;
     transition: translateX(-45%);
-    background-color: #e2fff3;
     border-radius: var(--border-radius);
     padding: 1rem;
     overflow: hidden;
@@ -27,7 +26,8 @@
 .btn-addtoko{
     background: #19f1a9;
     @apply px-10 py-2 m-4;
-    margin-top: 0.5em;
+    margin-top: 0.2em;
+    margin-bottom: 0.3em;
     border-radius: 12px;
     padding: 10px;
     box-shadow: 3px 3px 5px #d1d1d1;
@@ -37,15 +37,17 @@
     color: #FFFFFF;
     @apply px-10 py-2 m-4;
     margin-top: 0.5em;
+    margin-left:0.5em;
+    margin-bottom:0em;
     border-radius: 12px;
     padding: 10px;
+    box-shadow: 0px 0px 0px;
 }
 
 .btn-submit{
     background:#3bccff;
     color: white;
     padding: 5px 45%;
-    margin-bottom:3em;
 }
 .btn-submit:hover{
     color:black;
@@ -88,16 +90,16 @@
 
 .tokoformjudul{
     float:left;
-    width: 40%;
     height: 2em;
     background: #fdfff4;
+    width: 100%;
     border: 2px;
 }
 
 .tokoformdeskripsi{
     float:left;
-    width: 40%;
     height: 6em;
+    width:100%;
     background: #fdfff4;
     border: 2px;
 }
@@ -109,3 +111,76 @@
     font: 15px;
     left: 10px;
 }
+
+.map-container{
+    height: 22em;
+  }
+
+.columnleft {
+    float: left;
+    width: 40%;
+    padding: 10px;
+}
+
+.columnright{
+    float: right;
+    width: 60%;
+    padding: 10px;
+}
+
+.row:after{
+    content:"";
+    display:table;
+    clear:both;
+}
+
+.mainRunner {
+    border: 1px #000;
+    position: relative;
+  }
+  
+  .img1 {
+    border: 1px #f00;
+    position: relative;
+    z-index: 3;
+    bottom:50px;
+  }
+  
+  .img2 {
+    border: 1px #0f0;
+    position: relative;
+    z-index: 1;
+    top: -12px;
+    left: 12px;
+  }
+
+  .sidebar{
+    background-color: rgba(35, 55, 75, 0.7);
+    color: #ffffff;
+    padding: 3px 3px;
+    font-family: monospace;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 12px;
+    border-radius: 4px;
+  }
+
+  .card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-bottom: 2em;
+    width:70%;
+    text-align: center;
+    margin:auto;
+    border-radius: 20px;
+    transition: 0.3s;
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }

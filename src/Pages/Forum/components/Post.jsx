@@ -5,7 +5,7 @@ console.log("Post.js fired!");
 
 const Post = (props) => {
     const {key, postBody} = props;
-    if(postBody[0].substring(0,5)=="https"){
+    if(postBody[0].substring(0,5)==="https"){
         console.log(postBody[0]);
         return(<img src={postBody[0]} width="300" 
         height="auto" className="mx-auto"/>)
